@@ -1111,8 +1111,7 @@ public class ImsManager implements FeatureUpdates {
 
         // SUB_PROPERTY_NOT_INITIALIZED indicates it's never set in sub db.
         if (setting == SUB_PROPERTY_NOT_INITIALIZED) {
-            return getBooleanCarrierConfig(
-                    CarrierConfigManager.KEY_CARRIER_DEFAULT_WFC_IMS_ENABLED_BOOL);
+            return false;
         } else {
             return setting == ProvisioningManager.PROVISIONING_VALUE_ENABLED;
         }
